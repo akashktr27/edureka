@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student</title>
+</head>
+<body>
+
+
+<div>
+    {% block content %}
+    student
+
+    <form action="/student_submit/" method="post"><br/><br/>
+        {% csrf_token %}
+        ID: <input type="text" name="s_id" value=""> <br/><br/>
+        Name: <input type="text" name="s_name"> <br/><br/>
+        Email: <input type="text" name="s_email"> <br/><br/>
+        Address: <input type="text" name="s_address"> <br/><br/>
+
+        <button type="submit">Register</button>
+
+    </form>
+    {% endblock %}
+</div>
+
+
+</body>
+</html>

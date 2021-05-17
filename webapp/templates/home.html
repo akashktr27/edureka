@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{title}}</title>
+    <!--<link rel="stylesheet" href="{% static 'webapp/css/heading.css'%}" />-->
+    <link rel="stylesheet" href="{% static 'css/project.css'%}" />
+  </head>
+  <body class="bodycolor">
+
+  {% block content %}
+
+    <h1 class="heading">home page loaded here</h1>
+
+    <img class="img" src="{%static 'webapp/images/planet.jpg'%}" alt="" />
+    <img class="img" src="{%static 'webapp/images/planet.jpg'%}" alt="" />
+
+    <h2 class="sub-heading">this has been coming from title: {{ cname}}</h2>
+
+{% endblock %}
+
+  </body>
+</html>
+
+
+
+
+
+
+<h1>This is from home.html</h1>
+{{request.user}}
+<p>this is a paragraph</p>
+
